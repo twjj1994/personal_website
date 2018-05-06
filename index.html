@@ -1,0 +1,28 @@
+<hmtl>
+    <head>
+        <title>Jason Jhang - a fresh graduate</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel=stylesheet type="text/css" href="all.css">
+        <script>
+            function rp_toggle() {
+                var x = document.getElementById("nav");
+                if (x.className === "nav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "nav";
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <nav class="nav" id="nav">
+            <ul>
+                <li><a href="index.html">Jason Jhang</a></li>
+                <li class="rp_disappear"><a href="#">Resume</a></li>
+                <li class="rp_disappear"><a href="#">Projects</a></li>
+                <li class="rp_disappear"><a href="#">Notes</a></li>
+                <li class="rp_toggle"><a href="javascript:void(0);"  onclick="rp_toggle()">&#9776;</a></li>
+            </ul>
+        </nav>
+    </body>
+</hmtl>
